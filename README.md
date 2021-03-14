@@ -10,9 +10,22 @@ The output will provide you with two pieces of information to run your API.</p>
 </ul>
 <h2>RESTFul Endpoint</h2>
 
+<p>The restful endpoint is places into Marval under the webhook information. The first step is to create an Action Message which will contain the information which is POSTed to the webhook. The following is an example of an Action Message which is used to create an instance with Template ID lt-0037fr5582b0da15e.
+    {
+    "TemplateID": "lt-0037fr5582b0da15e",
+    "NotificationEmailAddress": "@Model.PreferredNotification.Address",
+    "RequestNumber": "@Model.RequestNumber",
+    @foreach (var item in Model.Attributes){	
+    @:"@item.Type.Name": "@item.Value",
+    }
+    "NotificationFromAddress": "YourEmailAddress"
+    }
+
+</p>
+
 <h2>API Key</h2>
 
-![My image up in the page][1]
+
 
 <!DOCTYPE html>
 <html lang="en">
