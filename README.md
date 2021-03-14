@@ -19,6 +19,7 @@ The output will provide you with two pieces of information to run your API.</p>
 <h2>RESTFul Endpoint</h2>
 
 <p>The restful endpoint is places into Marval under the webhook information. The first step is to create an Action Message which will contain the information which is POSTed to the webhook. The following is an example of an Action Message which is used to create an instance with Template ID lt-0037fr5582b0da15e.
+
 ```javascript
 {
 "TemplateID": "lt-0037fr5582b0da15e",
@@ -30,12 +31,10 @@ The output will provide you with two pieces of information to run your API.</p>
 "NotificationFromAddress": "YourEmailAddress"
 }
 ```
+
 </p>
 
 <h2>API Key</h2>
-
-
-
 
     <table>
       <tr>
