@@ -1,4 +1,16 @@
-# MarvalEC2Cloudformation
+# Marval EC2 Creator
+
+<p>This cloudformation template allows you to create an API protected endpoint to create new EC2 servers.
+This is primarily designed for Marval however it can work with anything that can run a webhook with headers.
+Simply click on 'Launch Stack' in whatever region you like and you will be taken to the cloudformation page to launch your stack.
+The output will provide you with two pieces of information to run your API.</p>
+<ul>
+<li>RESTFul Endpoint from API Gateway</li>
+<li>API Key</li>
+</ul>
+<h2>RESTFul Endpoint</h2>
+
+<h2>API Key</h2>
 
 
 <!DOCTYPE html>
@@ -7,7 +19,7 @@
    
   </head>
   <body>
-    <h1>Marval-EC2-Creator</h1>
+    
     <table>
       <tr>
         <th>Region</th>
