@@ -12,7 +12,7 @@ The output will provide you with two pieces of information to run your API.</p>
 
 <h2>API Key</h2>
 
-
+![My image up in the page][1]
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +20,7 @@ The output will provide you with two pieces of information to run your API.</p>
    
   </head>
   <body>
-    ![My image up in the page][1]
+
 
     <table>
       <tr>
