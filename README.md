@@ -7,7 +7,7 @@
    
   </head>
   <body>
-  
+
 <p>This cloudformation template allows you to create an API protected endpoint to create new EC2 servers.
 This is primarily designed for Marval however it can work with anything that can run a webhook with headers.
 Simply click on 'Launch Stack' in whatever region you like and you will be taken to the cloudformation page to launch your stack.
@@ -19,16 +19,17 @@ The output will provide you with two pieces of information to run your API.</p>
 <h2>RESTFul Endpoint</h2>
 
 <p>The restful endpoint is places into Marval under the webhook information. The first step is to create an Action Message which will contain the information which is POSTed to the webhook. The following is an example of an Action Message which is used to create an instance with Template ID lt-0037fr5582b0da15e.
-    {
-    "TemplateID": "lt-0037fr5582b0da15e",
-    "NotificationEmailAddress": "@Model.PreferredNotification.Address",
-    "RequestNumber": "@Model.RequestNumber",
-    @foreach (var item in Model.Attributes){	
-    @:"@item.Type.Name": "@item.Value",
-    }
-    "NotificationFromAddress": "YourEmailAddress"
-    }
-
+```javascript
+{
+"TemplateID": "lt-0037fr5582b0da15e",
+"NotificationEmailAddress": "@Model.PreferredNotification.Address",
+"RequestNumber": "@Model.RequestNumber",
+@foreach (var item in Model.Attributes){	
+@:"@item.Type.Name": "@item.Value",
+}
+"NotificationFromAddress": "YourEmailAddress"
+}
+```
 </p>
 
 <h2>API Key</h2>
