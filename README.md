@@ -34,10 +34,11 @@ The output will provide you with two pieces of information to run your API.</p>
    "NotificationFromAddress": "YourEmailAddress"
 }
 ```
-<h3>Step 1 - Create an Request Action</h3>
-<p>Once this action message is created, navigate to <b>Maintenance | Request | Request Actions</b> and create a new request action with 'When' criteria. Under 'Then' criteria, select 'Webhook to URL', then paste in your URL from the output of your Cloudformation Stack. the Verb to use is 'Post' and the Body is the Action Message you created in the previous step. Add a key value pair as a Header, under the 'including Headers' section. The key is x-api-key and the Value is the API Key in the output of your cloudformation stack.</p>
 
-<h2>API Key</h2>
+<p>Note: You must have an attribute called 'Server Name' or ServerName' on your request that will be passed to the request aciton.</p>
+
+<h3>Step 2 - Create an Request Action</h3>
+<p>Once this action message is created, navigate to <b>Maintenance | Request | Request Actions</b> and create a new request action with 'When' criteria. Under 'Then' criteria, select 'Webhook to URL', then paste in your URL from the output of your Cloudformation Stack. the Verb to use is 'Post' and the Body is the Action Message you created in the previous step. Add a key value pair as a Header, under the 'including Headers' section. The key is x-api-key and the Value is the API Key in the output of your cloudformation stack.</p>
 
 <table>
 <tr>
