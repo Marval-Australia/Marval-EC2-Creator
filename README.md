@@ -16,6 +16,8 @@ The output will provide you with two pieces of information to run your API.</p>
 <li>RESTFul Endpoint from API Gateway</li>
 <li>API Key</li>
 </ul>
+<p>Once you have these two pieces of information from your stack, as well as the template ID of an EC2 tempalte to create, proceed to the instuctions below.</p>
+
 <h2>Setting up your AWS EC2 Integration</h2>
 
 <h3>Step 1 - Create an Action Message</h3>
