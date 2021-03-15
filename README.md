@@ -25,13 +25,13 @@ The output will provide you with two pieces of information to run your API.</p>
 
 ```javascript
 {
-"TemplateID": "lt-0037fr5582b0da15e",
-"NotificationEmailAddress": "@Model.PreferredNotification.Address",
-"RequestNumber": "@Model.RequestNumber",
-@foreach (var item in Model.Attributes){	
-@:"@item.Type.Name": "@item.Value",
-}
-"NotificationFromAddress": "YourEmailAddress"
+   "TemplateID": "lt-0037fr5582b0da15e",
+   "NotificationEmailAddress": "@Model.PreferredNotification.Address",
+   "RequestNumber": "@Model.RequestNumber",
+   @foreach (var item in Model.Attributes){	
+      @:"@item.Type.Name": "@item.Value",
+   }
+   "NotificationFromAddress": "YourEmailAddress"
 }
 ```
 
